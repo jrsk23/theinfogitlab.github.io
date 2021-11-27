@@ -1,2 +1,3 @@
-# Hi there!
-We Create random configs files.
+# Hi there! Welcome to our hacker lab place..
+
+We create hacker rnadom installers and programs in different areas.
