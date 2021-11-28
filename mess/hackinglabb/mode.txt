@@ -4,7 +4,7 @@
 |  __  |/ _` |/ __| |/ / | '_ \ / _` | |\/| |/ _ \ / _` |/ _ \
 | |  | | (_| | (__|   <| | | | | (_| | |  | | (_) | (_| |  __/
 |_|  |_|\__,_|\___|_|\_\_|_| |_|\__, |_|  |_|\___/ \__,_|\___|
- Tools used by FBI,CIA,Military. __/ | Create by hackerlabb.com
+ Tools used by FBI,CIA,Military. __/ | Created by hackerlabb.com
                                 |___/
                                 
 
