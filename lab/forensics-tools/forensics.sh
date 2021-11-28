@@ -43,6 +43,28 @@ install_forensic(){
 }
 
 if [[ $1 == "--forensic" ]]; then
+
+  command -v curl >/dev/null 2>&1 || {
+
+      echo -en >&2 "Installing curl.";
+      sudo apt install -y curl >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
+
+  }
+
+  command -v wget >/dev/null 2>&1 || {
+
+      echo -en >&2 "Installing wget.";
+      sudo apt install -y wget >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
+
+  }
+
+  command -v figlet >/dev/null 2>&1 || {
+
+      echo -en >&2 "Installing figlet.";
+      sudo apt install -y figlet >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
+
+  }
+
 /usr/bin/clear
 
   echo -e ${COLOR_BLUE}
@@ -63,28 +85,7 @@ read -p "Will you install forensics tools mode? (Y/n):" Yn
 if [[ $Yn =~ ^[Yy]$ ]]; then
 
   echo -e "\n [ ${COLOR_GREEN}?${RESET_ALL} ] Checking for packages... \n";
-
-command -v curl >/dev/null 2>&1 || {
-
-    echo -en >&2 "Installing curl.";
-    sudo apt install -y curl >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
-
-}
-
-command -v wget >/dev/null 2>&1 || {
-
-    echo -en >&2 "Installing wget.";
-    sudo apt install -y wget >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
-
-}
-
-command -v figlet >/dev/null 2>&1 || {
-
-    echo -en >&2 "Installing figlet.";
-    sudo apt install -y figlet >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
-
-}
-
+  sleep 2
   install_forensic;
 
 figlet -f big All is done.
