@@ -44,7 +44,7 @@ font-size: 20px;
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  background: linear-gradient(to right,#020024, #090979, #00d4ff), url('../assets/imgs/rain.jpg');
+  background: linear-gradient(to right,#020024, #090979, #00d4ff), url('../assets/images/ran.jpg');
   height: 100vh;
   width: 100%;
 }
